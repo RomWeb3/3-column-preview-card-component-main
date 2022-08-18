@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column1, .column2, .column3 {
+    height: 500px;
+    max-width: 310px;
+    padding: 45px;
+}
+
+.column1 {
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.column1 button {
+    color: hsl(31, 77%, 52%);
+}
+
+.column2 {
+    background: hsl(184, 100%, 22%);
+}
+.column2 button {
+    color: hsl(184, 100%, 22%);
+}
+
+.column3 {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.column3 button {
+    color: (179, 100%, 13%);
+}
+
+img {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 25px;
+    font-size: 2.4em;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1em;
+    line-height: 1.35em;
+    margin-bottom: 85px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+    width: 70%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 2px solid white;
+}
+
+@media screen and (max-width:929px) {
+
+    .column2 {
+        border-radius: 0 10px 10px 0px;
+    } 
+    .column3 {
+        border-radius: 0 0 10px 10px;
+    }
+
+}
+
+@media screen and (max-width:619px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        padding: 1em 0;
+    }
+
+    .column1, .column2, .column3 {
+        border-radius: 0;
+        height: 425px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+}
